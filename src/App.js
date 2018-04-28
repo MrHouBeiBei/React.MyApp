@@ -1,6 +1,12 @@
+// import React, { Component } from 'react';
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+// import'/router';
+import { Link } from 'react-router'
+
+// import test from './components/test'
+
 
 // import Welcome2 from './components/test'
 
@@ -38,9 +44,21 @@ class App extends Component {
         <div className="pic">
            {/* <img src={require('./assets/zyl.jpg')}/> */}
         </div>
+        {/* <Router> */}
+          <Link to="/">注册</Link>
+        {/* </Router> */}
       </div>
     );
   }
 }
+
+// React.React((
+//   <Router>
+//     <Route path="/" component={App}>
+//       <Route path="/test" component={test}/>
+//     </Route>
+//   </Router>
+// ), document.body)
+
 
 export default App;
